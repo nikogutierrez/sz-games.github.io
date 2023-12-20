@@ -1,3 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<!-- Google Tag Manager -->
+<script>
+window.onload = function() {
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P93VS8N5');
+}
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+
+
+     <!--link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"-->
+
+
+     <!--Icons-->
+     <script src="https://kit.fontawesome.com/26f4207121.js" crossorigin="anonymous"></script>
+     <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" onload="this.onload=null;this.rel='stylesheet'">
+     
+     <!--ONESIGNAL PUSH-->
+     <script>
+      window.onload = function() {
+
+          const scriptEly = document.createElement('script');
+
+          scriptEly.src = 'https://cdn.onesignal.com/sdks/OneSignalSDK.js';
+
+        
+          scriptEly.addEventListener('load', () => {
+            window.OneSignal = window.OneSignal || [];
+          OneSignal.push(function() {
+            OneSignal.init({
+              appId: "08b63425-6f02-4ecb-ad79-8bb871e63518",
+              autoResubscribe: true, // This ensures the prompt shows again if dismissed
+
+              safari_web_id: "web.onesignal.auto.54d60a3d-c0d7-4ae1-b490-c29a9cfa7b70",
+              notifyButton: {
+                enable: false,
+              },
+              promptOptions: {
+                  customlink: {
+                    enabled: true, /* Required to use the Custom Link */
+                    style: "button", /* Has value of 'button' or 'link' */
+                    size: "medium", /* One of 'small', 'medium', or 'large' */
+                    color: {
+                      button: '#2e2e2e', /* Color of the button background if style = "button" */
+                      text: 'white', /* Color of the prompt's text */
+                    },
+                    text: {
+                      subscribe: "Subscribe to push notifications", /* Prompt's text when not subscribed */
+                      unsubscribe: "Unsubscribe from push notifications", /* Prompt's text when subscribed */
+                      explanation: "Get updates about new games and known issues.", /* Optional text appearing before the prompt button */
+                    },
+                    unsubscribeEnabled: true, /* Controls whether the prompt is visible after subscription */
+                  }
+                }
+            });
+          });
+                
+          });
+
+          document.head.appendChild(scriptEly);
+
+      }
+    
+
+     </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C78TXR0XFK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C78TXR0XFK');
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="https://raw.githubusercontent.com/sz-games/sz-games.github.io/main/G2.png" type="image/png">
+
+<meta name="title" content="Sz Games">
+<meta name="author" content="Sz Games">
+<title>Sz Games</title>
+<meta name="revisit-after" content="1 days" />
+
+<link rel="apple-touch-startup-image" href="https://sz-games.github.io/launch.png">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta property="og:image" content="https://raw.githubusercontent.com/sz-games/sz-games.github.io/main/G2.png" />
+
+<link rel="icon" href="https://raw.githubusercontent.com/sz-games/sz-games.github.io/main/G2.png">
+<meta name="description" content="The Best Place To Play over 100+ Games in school or at home."> 
+<meta property="og:site_name" content="Sz Games">
+
+<meta property="og:title" content="Sz Games">
+<meta name="description" property="og:description" content="The Best Place To Play over 100+ Games in school or at home."> 
+<meta content="website" property="og:type">
+<meta name="description" property="twitter:description" content="The Best Place To Play over 100+ Games in school or at home."> 
+
+<meta name="language" content="English">
+<script src="./GobalSettings.js"></script>
+
+<meta
+name="keywords"
+content="sz games, sz games unblocked, games, unblocked games, school, games, games to play, games on the web, html5 games, sz, sz-games, play games online,  online games"
+/> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1654900800235927"
+crossorigin="anonymous"></script>
+<script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "WebPage",
+      "name": "Sz Games",
+      "logo": "https://sz-games.github.io/G-Google.png"
+  }
+  </script>
+
+
+
+
+
+
 
 </head>
 
@@ -439,7 +577,213 @@ p {
 }
 </style>
 
+<div id="overlay" style="pointer-events: none; position: fixed; width: 100%; height: 100%;">
 
+</div>
+
+<div id="LOADINGSCREEN11" style="display: none; opacity: 1; transition: 0.8s; background-color: #525252; z-index: 100; position: fixed; width: 100%; height: 100%;">
+  
+  <img src="https://raw.githubusercontent.com/sz-games/home/main/G.png" style="z-index: 107; position:absolute; width: 100px;bottom: 50%; transform: translate(40%, -50%); height: 100px; right: 50%; " alt="Sz Games">
+  
+    <div class="loaderNEW"></div>
+
+</div>
+
+<script>
+      //document.getElementById('LOADINGSCREEN11').style.display = "block"
+
+  var LoadPWA = false
+  let LOADCHECK = sessionStorage.getItem("HasLoadedPWA1");
+  if ('matchMedia' in window && (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true)) {
+    if(LOADCHECK === 'true') {
+        console.log('E-11.0')
+    } else {
+      console.log('E-33')
+    //document.getElementById('LOADINGSCREEN11').style.display = "block"
+
+      //LOADING PERCENTAGE
+      /*
+      window.addEventListener('load', function() {
+        // All resources have finished loading
+        document.getElementById('loading-percentage').textContent = '100%';
+      });
+
+      window.addEventListener('DOMContentLoaded', function() {
+        // DOM content has finished loading
+        const totalResources = document.getElementsByTagName('*').length;
+        let loadedResources = 0;
+
+        const loadingPercentage = document.getElementById('loading-percentage');
+
+        function updateLoadingPercentage() {
+          loadedResources++;
+          const percentage = ((loadedResources / totalResources) * 100).toFixed(2);
+          loadingPercentage.textContent = percentage + '%';
+        }
+
+        const elements = document.getElementsByTagName('*');
+        for (let i = 0; i < elements.length; i++) {
+          elements[i].addEventListener('load', updateLoadingPercentage);
+          elements[i].addEventListener('error', updateLoadingPercentage); // Handle resource load errors
+        }
+      });
+      //END
+      */
+
+    if(LoadPWA === false) {
+      window.addEventListener('load', function() {
+        //sessionStorage.setItem("HasLoadedPWA1", 'true');
+
+        LoadPWA = true
+
+        //document.getElementById('LOADINGSCREEN11').style.opacity = 0
+        setTimeout(() => {
+          //document.getElementById('LOADINGSCREEN11').style.display = 'none'
+        }, 800);
+      });
+    }
+  }
+  } else {
+    console.log('External Code Did Not Load In')
+  }
+
+</script>
+
+<!--LOADER -->
+
+<div id="openercountdown" style="display: none; position: fixed; z-index: 5; top: 20%; right: 10px; width: 50px; height: 50px; border-radius: 15px; background-color: rgba(26, 26, 26, 0.762);">
+  <span class="material-icons notranslate"  style=" cursor: pointer;  color: white;">  
+     
+    arrow_circle_left
+    
+    </span>
+</div>
+
+<div style=" display: none;" class="topnav">
+ <p>Medals:</p>
+ <p id="afkk" >Afk</p>
+ <p id="first-steps" >First Steps</p>
+</div>
+<div id="TopMenu"  style=" top: 10px; border-radius: 15px 15px 15px 15px; z-index: 7; position: fixed; overflow-y: hidden; width: 98%; left: 50%; transform: translate(-50%); height: 50px; background-color: #1d1d1d;">
+  <a href="https://sz-games.github.io" aria-label="Home">  <img alt="Icon" fetchpriority="low" src="https://github.com/sz-games/home/blob/main/G.png?raw=true" style="z-index: 7; height: 25px; width: 25px;"> </a>
+
+  <h1 style="   font-size: medium; top: 50%; transform: translate(-0%, -50%); left: 50px; color: white; font-family: Arial, Helvetica, sans-serif; position: absolute;">Sz Games</h1>
+
+  <div style="left: 50%; position: absolute; top: 50%;  transform: translate(-50%, -50%);" id="timecontainercount">
+    <div style="background-color: #5656563c; border-radius: 15px; width: fit-content; padding: 0px 10px 0px 10px; height: 30px;">
+      <p id="countdowntxt" style="position: relative; top: 50%; transform: translate(-0%, -50%); color: white; text-align: center;">00:00</p>
+
+
+      <script>
+        // Set the target date and time
+        const targetDate = new Date('December 15, 2023 12:58:00 PST');
+    
+        function updateCountdown() {
+            const currentDate = new Date();
+            const timeDifference = targetDate - currentDate;
+    
+            if (timeDifference > 0) {
+                const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                
+                const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+                //document.getElementById('countdowntxt2').innerHTML = `${days} Days, ${hours} Hours, ${minutes} Minutes And ${seconds} Seconds`;
+    
+                // Adjust the message based on the remaining time
+                let message = '';
+                let fixmsg = `${days} Days, ${hours} Hours ${message}`
+                
+                const currentDateRN = new Date();
+
+                let currdate = currentDateRN.getDate() === targetDate.getDate()
+
+                //alert(currdate)
+                if (days === 0 && hours === 0 && minutes === 0) {
+
+                  message = 'Just seconds left!';
+                  fixmsg = `${seconds} Seconds ${message}`
+
+                } else if (days === 0 && hours === 0) {
+
+                    message = 'Less than a hour left!';
+                    fixmsg = `${minutes} Minutes ${message}`
+                  } else if (days === 0 && currdate) {
+                    message = 'A Few Hours Left!';
+                    fixmsg = `${hours} Hours ${message}`
+                  } else if (days === 1) {
+                    message = 'More Day!';
+                    fixmsg = `${days} ${message}`
+                 } else if (days === 2) {
+                  message = 'Almost There...';
+                  fixmsg = `${days} Days, ${hours} Hours ${message}`
+                } else {
+
+                    message = 'Until Friday';
+                    fixmsg = `${days} Days, ${hours} Hours ${message}`
+                    
+                }
+
+                document.getElementById('countdowntxt').innerHTML = fixmsg;
+
+            } else {
+                document.getElementById('countdowntxt').innerHTML = 'Done';
+            }
+        }
+    
+        setInterval(updateCountdown, 1000);
+    
+        updateCountdown();
+    </script>
+
+    </div>
+
+  </div>
+
+    <span onclick="ToggleMenuBig()" class="material-icons notranslate"  style=" cursor: pointer;  font-size: 22px; top: 50%; transform: translate(-0%, -50%); margin-right: 15px; float: right; color: white;  position: relative;">  
+      
+      menu
+      
+      </span>
+    <span onclick="ToggleLang()" class="material-icons notranslate"  style=" cursor: pointer;   font-size: larger; top: 50%; transform: translate(-0%, -50%); margin-right: 15px; float: right; color: white;  position: relative;">  
+     
+      translate
+      
+      </span>
+
+      <style>
+        .Discord {
+          transition: 0.5s !important;
+        }
+
+        .Discord:hover {
+          color: rgb(0, 51, 255) !important;
+        }
+
+      </style>
+          <a href="./Chat.html" aria-label="Go To Chat">
+
+            <span  class="material-icons notranslate"  style=" cursor: pointer;  font-size: larger; top: 50%; transform: translate(-0%, -50%); margin-right: 15px; float: right; color: white;  position: relative;">  
+                chat
+            </span>
+          </a>
+      <a href="https://discord.gg/DzKRSntb87" aria-label="Go To Discord Server Invite Page">
+        <i class='fab fa-discord Discord'  style='cursor: pointer;  font-size: larger; top: 50%; transform: translate(-0%, -50%); margin-right: 15px; float: right; color: white;  position: relative; '></i>
+      </a>
+
+      <!--div onclick="NOTE11()" style="cursor: pointer;   font-size: larger; top: 50%; transform: translate(-0%, -50%); margin-right: 15px; float: right; color: white;  position: relative;" >
+        <div style="background-color: rgb(255, 0, 0); width: 10px; height: 10px; border-radius: 50%; right: 0; position: absolute;">
+          <p style=" z-index: 9; color: black;"></p>
+        </div>
+      <span  class="material-icons notranslate"  >  
+     
+        
+        notifications
+        
+        </span>
+      </div-->
+  <div id="OLD_NAV" style="display: none;">
 
       <a href="./FNF.html">
         <h1 style=" cursor: pointer;   font-size: medium; top: 50%; transform: translate(-0%, -50%); margin-right: 15px;  float: right; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Friday Night Funkin</h1>
@@ -565,6 +909,207 @@ window.addEventListener("scroll", function() { // Add a scroll event listener
 </style>
 
 
+<!--div style="z-index: 99; position: fixed; right: 35px; top: 115px;" id="Note22">
+  <div style="width: 350px; height: 50px; border: solid gray 3px; border-radius: 15px; background-color: #1d1d1d;" id="containerNOTE">
+    <h3 id="VERNOTE" style="color: white; top: 50%; transform: translate(-0%, -50%); position: relative; left: 4px;">Site Updated To Version: </h3>
+  </div>
+</div-->
+
+<div id="SideMenuBigScreen" style="transition: 0.8s; display: none; position: fixed; z-index: 91; background-color: #1d1d1d7b; width: 100%; height: 100%;">
+  
+  <div  style="display: none;  position: absolute;  animation: menuM 7s infinite; transition: 0.5s; right: 0px; border: solid gray 3px;  border-radius: 15px 0px 0px 15px; width: 300px; height: 100%; z-index: 95; background-color: #2f2f2f;" id="MMenuBig" >
+    <span onclick="ToggleMenuBig()" class="material-icons notranslate"  style=" cursor: pointer; z-index: 96; font-size: x-large; top: 15px; margin-right: 15px; right: 0; color: white;  position: absolute;">  
+     
+      close
+      
+      </span>
+      <span id="SETTINGSMENU1v" onclick="window.location = 'https://sz-games.github.io/settings.html' " class="material-icons notranslate"  style=" cursor: pointer; z-index: 96; font-size: x-large; top: 15px; margin-right: 45px; right: 0; color: white;  position: absolute;">  
+     
+        settings
+        
+        </span>
+        <span id="NOTIF" onclick="toggleSetings1()" class="material-icons notranslate"  style=" cursor: pointer; z-index: 96; font-size: x-large; top: 15px; margin-right: 75px; right: 0; color: white;  position: absolute;">  
+     
+          notifications
+          
+          </span>
+
+          <script>
+
+            
+          </script>
+
+        <script>
+          const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+          if (isMobile) {
+              document.getElementById('SETTINGSMENU1v').style.display = 'none'
+          } else {
+            document.getElementById('SETTINGSMENU1v').style.display = 'block'
+          }
+
+        </script>
+
+      <div style="border-radius: 15px; background-color: #1d1d1d; height: 50px;">
+    <div style="position: relative; top: 15px; ">
+      <img src="https://github.com/sz-games/home/blob/main/G.png?raw=true" style="position: absolute; top: -15px; height: 30px; width: 30px;" />
+      <h1 style="color: white; font-size: larger; top: 2px;  position: relative; left: 55px; font-family: Arial, Helvetica, sans-serif; ">Sz Games</h1>
+    </div>
+      </div>
+
+    <div style="overflow-x: hidden; overflow-y: auto; height: 75%;">
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="./index.html">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Home</h1>
+      </a>
+    
+    </div> 
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="./Privacy-Policy.html">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Privacy Policy</h1>
+      </a>
+
+    </div> 
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="./terms-of-service.html">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Terms Of Service</h1>
+      </a>
+
+    </div> 
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="./MessageUN.html">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Unblocker</h1>
+      </a>
+
+    </div> 
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="https://sz-games.github.io/games/game.html?game=https://mr-funkinguy.github.io/MOVIES/">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Movies</h1>
+      </a>
+
+    </div> 
+
+
+
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="https://forms.gle/6R1E28R33RvK7y486">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Game Request</h1>
+      </a>
+    
+    </div> 
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="https://forms.gle/3eanrSMcAHdf9rTy6">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Report A Bug</h1>
+      </a>
+    
+    </div> 
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="https://forms.gle/1EoD5k5HZSA8yd8ZA">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Submit A Review</h1>
+      </a>
+    
+    </div> 
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="https://sz-games.github.io/BetaTest.html">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Beta Test Portal</h1>
+      </a>
+    
+    </div> 
+
+
+
+    <!--div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+    
+        <h1 style=" cursor: not-allowed;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: rgba(255, 255, 255, 0.597);  font-family: Arial, Helvetica, sans-serif; position: relative;">Apps</h1>
+      
+    
+    </div--> 
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="./FNF.html">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Friday Night Funkin</h1>
+      </a>
+    
+    </div> 
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="./reviews.html">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Reviews</h1>
+      </a>
+    
+    </div> 
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="./Status.html">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Status</h1>
+      </a>
+    
+    </div> 
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="./About.html">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">About</h1>
+      </a>
+    
+    </div> 
+    
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="./Tools/voiceAI.html">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Sound identifier AI</h1>
+      </a>
+    
+    </div> 
+
+    <div class="MenuIt" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+      <a style="text-decoration: none;" href="./IMAGEAI.html">
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">Image Classification AI</h1>
+      </a>
+    
+    </div> 
+
+
+    <div class="MenuIt" onclick="toggleMENU107()" style="height: 35px; top: 35px; width: 100%; position: relative;">
+
+        <h1 style=" cursor: pointer;  width: 100%; font-size: medium; top: 50%; transform: translate(-0%, -50%); text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; position: relative;">IFRAME</h1>
+      </a>
+    
+    </div> 
+
+  
+      
+    </div>
+    
+  </div>
+</div>
+
+<!--Menus-->
+
+<!--Settings-->
 
 <style>
   .notification2LOCK {
@@ -1272,7 +1817,14 @@ z-index: 1;
 }
 </style>
 
-
+    <div id="Header" class="header">
+        <!--img src="https://github.com/sz-games/sz-games.github.io/blob/main/Gh.png?raw=true" style="position: relative; width: 150px; height: 150px;" alt="img"-->
+        <img src="https://github.com/sz-games/home/blob/main/G.png?raw=true"  fetchpriority="high" style="position: relative; width: 150px; height: 150px;" alt="Sz Games">
+        <h1>Sz Games</h1>
+        <p style="font-size: 20px;">By Bobby</p>
+      </div>
+      <br></br>
+       <!--ADCODE-->
   
   <style>
     @keyframes ADCLOSE {
@@ -1280,7 +1832,296 @@ z-index: 1;
       to {position: relative;  bottom: -0px; background-color: gray; height: 70px  !important; border-radius: 50px;  opacity: 0; left: 50%; transform: translate(-50%); display: block; z-index: 80}
     }
   </style>
+  <ins class="adsbygoogle"
+  id="ad-container3"
+  style="position: relative; transition: 0.8s; display: inline-block;  background-color: gray; height: 70px  !important; border-radius: 15px 15px 0px 0px; width: 60%; left: 50%; transform: translate(-50%); display: block; z-index: 20"
+  data-ad-client="ca-pub-1654900800235927"
+  data-ad-slot="6959226874"
 
+     >  
+
+</ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<ins class="adsbygoogle"
+id="ad-container"
+style="position: relative; transition: 0.8s; display: inline-block;  background-color: gray; height: 70px  !important; border-radius: 0px 0px 15px 15px; width: 60%; left: 50%; transform: translate(-50%); display: block; z-index: 20"
+data-ad-client="ca-pub-1654900800235927"
+data-ad-slot="9203744669"
+
+   >  
+
+</ins>
+<script>
+  function adclose(button) {
+     
+      button.style.animation = 'ADCLOSE 0.5s'
+      setTimeout(() => {
+        button.style.display = 'none'
+      }, 490);
+
+  }
+ 
+
+</script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      <!--h1 id="ec" class="day" >----------</h1-->
+      <br></br>
+
+</div>
+
+
+      
+<script>
+  console.log('eee')
+  // Function to retrieve the value of a cookie
+  function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+  function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+    function selectHeader2(item) {
+      document.body.style.backgroundAttachment = "fixed"
+      
+      if(item === 'waltah') {
+        document.body.style.backgroundImage = "url('https://github.com/sz-games/sz-games.github.io/blob/main/Waltah.gif?raw=true')"
+
+        setCookie("BG", 'waltah', 365);
+      } else if (item === 'normal') {
+        document.body.style.background = 'linear-gradient(to bottom, #1d1d1d, #2f2f2f, rgb(58, 58, 58), #1d1d1d, #2f2f2f)';
+        document.body.style.backgroundAttachment = "scroll"
+
+        setCookie("BG", 'normal', 365);
+      } else if(item==='east') {
+        document.body.style.backgroundImage = "url('https://github.com/sz-games/sz-games.github.io/blob/main/KanyeEast.gif?raw=true')"
+        setCookie("BG", 'east', 365);
+      } else if(item==='shock') {
+        document.body.style.backgroundImage = "url('https://github.com/sz-games/sz-games.github.io/blob/main/Shock.gif?raw=true')"
+
+        setCookie("BG", 'shock', 365);
+      } else if(item==='AMeme') {
+        document.body.style.backgroundImage = "url('https://github.com/sz-games/sz-games.github.io/blob/main/AMeme.gif?raw=true')"
+        setCookie("BG", 'AMeme', 365);
+      }
+      document.body.style.backgroundRepeat = 'no-repeat';
+      document.body.style.backgroundSize = 'cover';
+    }
+
+//HEADER
+
+    function selectHeader(item) {
+      if(item === 'waltah') {
+        document.getElementById('Header').classList.remove('header-east')
+        document.getElementById('Header').classList.remove('header')
+        document.getElementById('Header').classList.remove('header-shock')
+        document.getElementById('Header').classList.remove('header-AMeme')
+        document.getElementById('Header').classList.remove('header-Tsp')
+        document.getElementById('Header').classList.add('header-waltah')
+        document.getElementById('Header').classList.remove('header-chip')
+
+        setCookie("Header", 'waltah', 365);
+      } else if (item === 'normal') {
+        document.getElementById('Header').classList.add('header')
+        document.getElementById('Header').classList.remove('header-east')
+        document.getElementById('Header').classList.remove('header-waltah')
+        document.getElementById('Header').classList.remove('header-AMeme')
+        document.getElementById('Header').classList.remove('header-shock')
+        document.getElementById('Header').classList.remove('header-Tsp')
+        document.getElementById('Header').classList.remove('header-chip')
+
+        setCookie("Header", 'normal', 365);
+      } else if(item==='east') {
+        document.getElementById('Header').classList.remove('header')
+        document.getElementById('Header').classList.add('header-east')
+        document.getElementById('Header').classList.remove('header-waltah')
+        document.getElementById('Header').classList.remove('header-shock')
+        document.getElementById('Header').classList.remove('header-AMeme')
+        document.getElementById('Header').classList.remove('header-Tsp')
+        document.getElementById('Header').classList.remove('header-chip')
+
+        setCookie("Header", 'east', 365);
+      } else if(item==='shock') {
+        document.getElementById('Header').classList.remove('header')
+        document.getElementById('Header').classList.remove('header-east')
+        document.getElementById('Header').classList.remove('header-waltah')
+        document.getElementById('Header').classList.add('header-shock')
+        document.getElementById('Header').classList.remove('header-AMeme')
+        document.getElementById('Header').classList.remove('header-Tsp')
+        document.getElementById('Header').classList.remove('header-chip')
+
+        setCookie("Header", 'shock', 365);
+      } else if(item==='AMeme') {
+        document.getElementById('Header').classList.remove('header')
+        document.getElementById('Header').classList.remove('header-east')
+        document.getElementById('Header').classList.remove('header-waltah')
+        document.getElementById('Header').classList.remove('header-shock')
+        document.getElementById('Header').classList.add('header-AMeme')
+        document.getElementById('Header').classList.remove('header-Tsp')
+        document.getElementById('Header').classList.remove('header-chip')
+
+        setCookie("Header", 'AMeme', 365);
+      } else if(item==='Tsp') {
+        document.getElementById('Header').classList.remove('header')
+        document.getElementById('Header').classList.remove('header-east')
+        document.getElementById('Header').classList.remove('header-waltah')
+        document.getElementById('Header').classList.remove('header-shock')
+        document.getElementById('Header').classList.remove('header-AMeme')
+        document.getElementById('Header').classList.remove('header-chip')
+        document.getElementById('Header').classList.add('header-Tsp')
+        setCookie("Header", 'Tsp', 365);
+      } else if(item==='chip') {
+        document.getElementById('Header').classList.remove('header')
+        document.getElementById('Header').classList.remove('header-east')
+        document.getElementById('Header').classList.remove('header-waltah')
+        document.getElementById('Header').classList.remove('header-shock')
+        document.getElementById('Header').classList.remove('header-AMeme')
+        document.getElementById('Header').classList.remove('header-Tsp')
+        document.getElementById('Header').classList.add('header-chip')
+
+        setCookie("Header", 'chip', 365);
+      }
+    }
+  
+  // Usage example
+  const cookieValue = getCookie("IsVIP");
+  
+  if (cookieValue) {
+    //console.log("The value of the cookie is: " + cookieValue);
+    document.getElementById('Vip').style.display = 'block'
+    document.getElementById('VIPBUTTON').style.display = 'block'
+    // Get the parent element that contains the image elements
+    const parentElement = document.getElementById('options');
+
+    // Get all the image elements within the parent element
+    const imageElements = parentElement.getElementsByTagName('img');
+
+    // Loop through each image element and load the data-src attribute
+    for (let i = 0; i < imageElements.length; i++) {
+      const image = imageElements[i];
+      const dataSrc = image.getAttribute('data-src');
+      
+      if (dataSrc) {
+        // Set the data-src as the image source to load it
+        image.setAttribute('src', dataSrc);
+      }
+    }
+
+  } else {
+    console.log("The cookie is not set or expired.");
+    document.getElementById('Vip').style.display = 'none'
+    document.getElementById('VIPBUTTON').style.display = 'none'
+  }
+
+  const Header = getCookie("Header");
+  const bg = getCookie("BG");
+  if (Header) {
+    console.log("The value of the cookie is: " + Header);
+    selectHeader(Header)
+  } else {
+    console.log("The cookie is not set or expired.");
+  }
+
+  if (bg) {
+    console.log("The value of the cookie is: " + bg);
+    selectHeader2(bg)
+  } else {
+    console.log("The cookie is not set or expired.");
+  }
+
+
+  const opacitySlider = document.getElementById('opacitySlider');
+const targetElements = document.getElementsByClassName('show');
+var loadedStuffVIPO = false;
+
+
+function searchHandleLoad2() {
+  const hiddenDivs = document.querySelectorAll('.box');
+  const lazyImages = document.querySelectorAll('.ImageForGame');
+ 
+  lazyImages.forEach(image => {
+   
+      image.src = image.getAttribute('data-src');
+      image.onload = function() {
+        image.classList.add('showIMG');
+      
+    }
+  });
+  hiddenDivs.forEach(div => {
+   
+      div.classList.add('show');
+    
+  });
+
+
+}
+
+opacitySlider.addEventListener('input', function() {
+  console.log('Yo')
+  if(loadedStuffVIPO===false) {
+    searchHandleLoad2()
+    loadedStuffVIPO = true
+  }
+ 
+  for (let i = 0; i < targetElements.length; i++) {
+    targetElements[i].style.cssText += 'opacity: ' + opacitySlider.value + ' !important;';
+  }
+});
+
+  </script>
+
+<script>
+var dayy = document.getElementById('ec');
+
+  var today = new Date()
+var curHr = today.getHours()
+
+if (curHr < 12) {
+  console.log(curHr + '--' + today);
+  //document.getElementById('ec').innerHTML = 'Good Morning!'
+} else if (curHr < 18) {
+  console.log(curHr + '--' + today);
+  //document.getElementById('ec').innerHTML = 'Good Afternoon!'
+} else {
+console.log(curHr + '--' + today);
+ //document.getElementById('ec').innerHTML = 'Good Evening!'
+}
+
+</script>
+
+
+
+<!--div class="hello" style=" margin-right: auto; margin-left: auto; width: 430px;">
+  <a href="https://sites.google.com/view/fnf-unblockedhehe/home">
+      <p class="game" style="left: 105px;" >Infinite Tower</p>
+      <div class="fade" ></div>
+   <img style="border-radius: 15px; width: 400px;" src="https://github.com/sz-games/sz-games.github.io/blob/main/cover/fn.png?raw=true" alt="game">
+  </a>
+ 
+  
+</div-->
 <style>
   .inputbox {
   position: relative;
@@ -1371,6 +2212,20 @@ z-index: 1;
 
 
  
+
+<button id="TEST3"
+style="width: 80%; height: 40px; font-size: 15px; color: white; background-color: #2f2f2f; border-radius: 15px; cursor: pointer; border: 2px solid grey; left: 50%; transform: translate(-50%, -0%); position: relative;"
+>Scroll To Latest Games</button>
+<br>
+<br>
+<div  class="inputbox">
+
+    <input onkeyup="Search()"  id="SearchBox" required="required" type="text">
+  
+  <label for="SearchBox" style="color: white;">Search</label>
+  <i></i>
+</div>
+
 
 
 <style>
@@ -5000,3 +5855,490 @@ z-index: 1;
 </div>
 
 </div>
+
+<!--script>
+  //prevent unsecure connections
+    const securekey = "IGNvbnN0IGFsbG93ZWREb21haW4gPSAic3otZ2FtZXMuZ2l0aHViLmlvIjsKICBjb25zdCBjdXJyZW50RG9tYWluID0gd2luZG93LmxvY2F0aW9uLmhvc3RuYW1lOwogIGlmIChjdXJyZW50RG9tYWluICE9PSBhbGxvd2VkRG9tYWluKSB7CiAgICBkb2N1bWVudC5ib2R5LmlubmVySFRNTCA9ICc8aDE+QWNjZXNzIHRvIHRoaXMgcGFnZSBpcyBub3QgYWxsb3dlZC48L2gxPic7CiAgfQ==";
+
+    const securekeyupk = atob(securekey);
+
+    const bb = new Blob([securekeyupk], { type: "application/javascript" });
+
+    const bbb = URL.createObjectURL(bb);
+
+    const cv = document.createElement("script");
+    cv.src = bbb;
+
+    document.body.appendChild(cv);
+</script-->
+
+
+<script>
+
+  
+document.getElementById('TEST3').addEventListener('click', function() {
+  searchHandleLoad();
+  window.scroll({
+    top: document.body.scrollHeight,
+    left: 0,
+    behavior: 'smooth'
+  });
+});
+document.getElementById('SCROLLUP').addEventListener('click', function() {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+});
+
+
+
+  var Isscrolledf = false;
+window.addEventListener("scroll", function() {
+  if (window.pageYOffset > 350) { 
+    if(Isscrolledf===false) {
+      document.getElementById('SCROLLUP').style.display = 'block'
+      document.getElementById('SCROLLUP').style.opacity = 1
+
+      document.getElementById('SCROLLUP').style.transform = 'scale(1.0)'
+    Isscrolledf = true
+    //console.log("its false")
+    } else {
+      Isscrolledf = true
+    }
+  } else  if (window.pageYOffset < 350) {
+    if(Isscrolledf===true) {
+      //console.log("its true")
+      document.getElementById('SCROLLUP').style.transform = 'scale(0.3)'
+      document.getElementById('SCROLLUP').style.opacity = 0
+      setTimeout(() => {
+
+        document.getElementById('SCROLLUP').style.display = 'none'
+      }, 500);
+      Isscrolledf=false
+    } else {
+      Isscrolledf=false
+    
+    }
+  }
+
+});
+
+</script>
+
+
+
+<section class="sticky">
+  <!--div class="bubbles">
+      <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div-->
+
+ 
+<script>
+
+const imageContainer = document.getElementById("games");
+
+const images = imageContainer.getElementsByTagName("img");
+
+for (let i = 0; i < images.length; i++) {
+  images[i].addEventListener("error", function() {
+    console.log(`Image ${i+1} failed to load!`);
+
+  
+     setTimeout(function() {
+      images[i].src = images[i].src;
+     }, 3000); 
+  });
+  console.log('code: 9B')
+
+}
+
+
+  const container = document.getElementById('games');
+const boxes = document.querySelectorAll('.box');
+
+function isElementInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight + 400 || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+
+function handleScroll() {
+  const hiddenDivs = document.querySelectorAll('.box');
+  const lazyImages = document.querySelectorAll('.ImageForGame');
+  
+  if(canLoadImages = true) {
+    
+    lazyImages.forEach(image => {
+      if (isElementInViewport(image) && !image.src) {
+
+        image.src = image.getAttribute('data-src');
+        image.onload = function() {
+          
+          image.classList.add('showIMG');
+        
+         // console.log('Loaded Game')
+        };
+      }
+    });
+    
+    hiddenDivs.forEach(div => {
+      if (isElementInViewport(div)) {
+        div.classList.add('show');
+        //console.log('Loaded ' + div.id)
+      }
+    });
+  }
+}
+
+var PageHasLoaded = false
+
+window.addEventListener("load", function(event) {
+    if(PageHasLoaded = false) {
+      canLoadImages = true
+      console.log('E-2')
+
+      handleScroll()
+    }
+    console.log('E-1')
+
+});
+
+
+
+var preloaded = false
+function searchHandleLoad() {
+  const hiddenDivs = document.querySelectorAll('.box');
+  const lazyImages = document.querySelectorAll('.ImageForGame');
+  if(preloaded===false) {
+  lazyImages.forEach(image => {
+   
+      image.src = image.getAttribute('data-src');
+      image.onload = function() {
+        image.classList.add('showIMG');
+      
+      }
+  });
+  hiddenDivs.forEach(div => {
+   
+      div.classList.add('show');
+    
+  });
+  console.log('Loaded')
+  preloaded = true
+} else if (preloaded===true) {
+  console.log('Already Loaded')
+}
+}
+
+
+window.addEventListener('scroll', handleScroll);
+
+document.addEventListener('DOMContentLoaded', handleScroll);
+
+handleScroll();
+
+
+  var input, filter, elements, element, i;
+  input = document.getElementById("SearchBox");
+  filter = input.value.toUpperCase();
+  elements = document.getElementById("games");
+  element = elements.getElementsByTagName("div");
+ 
+
+  function Search() {
+  filter = input.value.toUpperCase();
+  input.addEventListener("input", function() {
+    if (input.value.length > 0) {
+      for (i = 0; i < element.length; i++) {
+        var id = element[i].getAttribute("id");
+        if (id && id.toUpperCase().indexOf(filter) > -1) {
+          element[i].style.display = "";
+          searchHandleLoad();
+        } else {
+          var shouldExclude = element[i].classList.contains("textover");
+          if (!shouldExclude) {
+            element[i].style.display = "none";
+          }
+        }
+      }
+    } else {
+      for (var i = 0; i < element.length; i++) {
+        element[i].style.display = "block";
+      }
+    }
+  });
+}
+
+var usingLoad = false
+
+function loadGame() {
+  if(usingLoad===true){
+    
+  }
+}
+
+  </script>
+  
+  <!--div class="bubbles" style="  filter: drop-shadow(0 0 10px white);" >
+  <div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+<div class="snow"></div>
+  </div-->
+</section>
+<script src="confetti.js"></script>
+
+      <!--ADCODE-->
+     
+</body>
+
+<script>
+  
+  /*
+    firststeps.style.color = "#595959";
+    setInterval(displayHelloo, 1000);
+
+function displayHelloo() {
+if (localStorage.clickcountt) {
+ firststeps.style.color = 'white';
+
+} else {
+helloo();
+firststeps.style.color = "#595959";
+//localStorage.clickcount = 1;
+}
+}
+
+
+
+
+      function helloo() {
+        Name.innerHTML = "First Steps";
+ description.innerHTML = "Opened The Site For The First Time, Have Fun!.";
+   medd.style.opacity = 1;
+    medd.style.animation = 'medal 15s';
+    setTimeout(() => {
+
+   medd.style.opacity = 0;
+    
+  }, 15000);
+                    localStorage.clickcountt = 00001;
+      }
+      */
+
+
+    </script>
+
+</html>
